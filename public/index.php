@@ -10,7 +10,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 
 list($ornamentRepository, $treeRepository) = FillingData::fillData();
-$selectedTreeId = rand(1,3);
+$selectedTreeId = rand(1,count($treeRepository->getAllTrees()));
 
 $controller = new TreeDecoratorController(
     new TreeDecoratorService($ornamentRepository, $treeRepository),
