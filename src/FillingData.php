@@ -16,7 +16,7 @@ class FillingData
 
         $treeRepository->addTree(new Tree(1, 'małe', 4, [3], 100.0, 40, 0.23)); // excluded_ornament_size = [3]
         $treeRepository->addTree(new Tree(2, 'średnie', 5, [], 200.0, 80, 0.23));
-        $treeRepository->addTree(new Tree(3, 'duże', 15, [], 250.0, 100, 0.23));
+        $treeRepository->addTree(new Tree(3, 'duże', 6, [], 250.0, 100, 0.23));
 
         $ornamentRepository->addOrnament(new Ornament(1, 'czerwona', 3.3, 2.5 , 1));
         $ornamentRepository->addOrnament(new Ornament(2, 'niebieska', 3.50, 2.7, 1));
